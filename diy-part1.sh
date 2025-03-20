@@ -20,3 +20,5 @@ echo "Checking and adding custom feed for SoftEther..."
 if ! grep -q "softether" feeds.conf.default; then
     echo "src-git softether https://github.com/0xflotus/openwrt-softether.git" >> feeds.conf.default
 fi
+echo "Setting download mirror..."
+echo "CONFIG_MIRROR=\"http://downloads.openwrt.org\"" >> .config
