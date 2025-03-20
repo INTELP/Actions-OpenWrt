@@ -1,0 +1,13 @@
+config interface 'lan'
+    option ifname 'eth0'
+    option proto 'static'
+    option ipaddr '10.10.10.20'       # LAN IP 设置为 10.10.10.20
+    option netmask '255.255.255.0'
+    option ip6assign '60'
+
+config interface 'wan'
+    option ifname 'eth0.2'
+    option proto 'pppoe'
+    option username '你的宽带用户名'  # 替换为实际用户名
+    option password '你的宽带密码'    # 替换为实际密码
+    option ipv6 'auto'
