@@ -16,3 +16,5 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo "Adding custom feed for SoftEther..."
+echo "src-git softether https://github.com/0xflotus/openwrt-softether.git" >> feeds.conf.default
